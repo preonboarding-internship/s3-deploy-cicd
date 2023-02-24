@@ -8,5 +8,5 @@ test("App render test", () => {
 
   expect(heading).toBeInTheDocument();
 
-  expect(heading.textContent).toBe("Hello, AWS CLI");
+  expect(heading.textContent).toBe("Hello, CICD");
 });
