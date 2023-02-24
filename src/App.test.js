@@ -1,8 +1,12 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("App render test", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+
+  const heading = screen.getByRole("heading");
+
+  expect(heading).toBeInTheDocument();
+
+  expect(heading.textContent).toBe("Bye, AWS CLI");
 });
