@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Bye, AWS CLI</h1>
+      <h1>Hello, AWS CLI</h1>
     </div>
   );
 }
