@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 // App 렌더링이 되야 한다.
@@ -7,7 +6,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>Hello, AWS CLI</h1>
+      <h1>Hello, CICD</h1>
     </div>
   );
 }
