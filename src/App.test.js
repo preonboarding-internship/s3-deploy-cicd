@@ -8,5 +8,5 @@ test("renders learn react link", () => {
 
   expect(h1).toBeInTheDocument();
 
-  expect(h1.textContent).toBe("Hello, World");
+  expect(h1.textContent).toBe("Bye, World");
 });
