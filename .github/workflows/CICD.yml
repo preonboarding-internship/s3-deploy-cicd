@@ -1,0 +1,12 @@
+name: CI/CD
+
+on:
+  push:
+    branches:
+      - 10th
+
+jobs:
+  cicd:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo hello,cicd
