@@ -9,4 +9,6 @@ jobs:
   cicd:
     runs-on: ubuntu-latest
     steps:
-      - run: echo hello,cicd
+      - uses: actions/checkout@10th
+      - run: npm ci
+      - run: npm run test
