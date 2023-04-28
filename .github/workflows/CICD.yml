@@ -14,3 +14,4 @@ jobs:
           ref: "10th"
       - run: npm ci
       - run: npm run test
+      - run: echo "success"
