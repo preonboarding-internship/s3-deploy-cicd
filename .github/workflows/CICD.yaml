@@ -9,8 +9,8 @@ jobs:
   cicd:
     runs-on: ubuntu-latest
     steps:
-     - uses: actions/checkout@v3
-			 with:
-			   ref: "12th"
-     - run: npm install
-     - run: npm run test
+    - uses: actions/checkout@v3
+			with:
+				ref: "12th"
+    - run: npm ci
+    - run: npm run test
