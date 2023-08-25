@@ -9,5 +9,7 @@ jobs:
   cicd:
     runs-on: ubuntu-latest
     steps:
-      - run: node -v
+      - name: "print node version"
+        run: node -v
+
       - run: echo hello,world
