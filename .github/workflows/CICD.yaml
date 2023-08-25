@@ -9,7 +9,8 @@ jobs:
   cicd:
     runs-on: ubuntu-latest
     steps:
-      - name: "print node version"
-        run: node -v
-
-      - run: echo hello,world
+     - uses: actions/checkout@v3
+			 with:
+			   ref: "12th"
+     - run: npm install
+     - run: npm run test
