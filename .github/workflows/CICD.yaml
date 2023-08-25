@@ -1,0 +1,13 @@
+name: CI/CD-12th
+
+on:
+  push:
+    branches:
+      - 12th
+
+jobs:
+  cicd:
+    runs-on: ubuntu-latest
+    steps:
+      - run: node -v
+      - run: echo hello,world
