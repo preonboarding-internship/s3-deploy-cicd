@@ -14,7 +14,8 @@ jobs:
           ref: "kt"
       - run: npm ci
       - run: npm run build
-      - uses: jakejarvis/s3-sync-action@master
+      - name: upload to s3
+        uses: jakejarvis/s3-sync-action@master
         with:
           args: --delete
         env:
